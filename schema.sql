@@ -96,4 +96,49 @@ CREATE TABLE team_statistics (
     game_date TEXT
 );
 
+CREATE TABLE player_statistics (
+    player_id INTEGER,
+    first_name TEXT,
+    last_name TEXT,
+    
+    game_id INTEGER,
+    game_datetime TEXT,
+    
+    team_id INTEGER,
+    team_name TEXT,
+    opponent_team_id INTEGER,
+    opponent_team_name TEXT,
+    
+    is_home INTEGER,
+    win INTEGER,
+    
+    minutes_played REAL,
+    points INTEGER,
+    assists INTEGER,
+    blocks INTEGER,
+    steals INTEGER,
+    
+    fg_attempted INTEGER,
+    fg_made INTEGER,
+    fg_percentage REAL,
+    
+    three_pt_attempted INTEGER,
+    three_pt_made INTEGER,
+    three_pt_percentage REAL,
+    
+    ft_attempted INTEGER,
+    ft_made INTEGER,
+    ft_percentage REAL,
+    
+    rebounds_defensive INTEGER,
+    rebounds_offensive INTEGER,
+    rebounds_total INTEGER,
+    
+    turnovers INTEGER,
+    plus_minus INTEGER,
+    
+    starting_position TEXT,
+    game_date TEXT
+);
+
 add schema
