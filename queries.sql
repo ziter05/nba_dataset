@@ -49,3 +49,14 @@ GROUP BY turnovers
 ORDER BY turnovers;
 
 
+SELECT 
+    p.team_name,
+    AVG(p.points) as avg_player_points,
+    AVG(t.team_score) as avg_team_score
+FROM player_statistics p
+JOIN team_statistics t 
+    ON p.game_id = t.game_id 
+    AND p.team_id = t.team_id
+GROUP BY p.team_name
+ORDER BY avg_team_score DESC;
+
