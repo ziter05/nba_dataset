@@ -39,3 +39,61 @@ CREATE TABLE games (
     arena_state TEXT
 );
 
+
+CREATE TABLE team_statistics (
+    game_id INTEGER,
+    game_datetime TEXT,
+    team_id INTEGER,
+    team_name TEXT,
+    opponent_team_id INTEGER,
+    opponent_team_name TEXT,
+    is_home INTEGER,
+    win INTEGER,
+    team_score INTEGER,
+    opponent_score INTEGER,
+    
+    assists INTEGER,
+    blocks INTEGER,
+    steals INTEGER,
+    
+    fg_attempted INTEGER,
+    fg_made INTEGER,
+    fg_percentage REAL,
+    
+    three_pt_attempted INTEGER,
+    three_pt_made INTEGER,
+    three_pt_percentage REAL,
+    
+    ft_attempted INTEGER,
+    ft_made INTEGER,
+    ft_percentage REAL,
+    
+    rebounds_defensive INTEGER,
+    rebounds_offensive INTEGER,
+    rebounds_total INTEGER,
+    
+    turnovers INTEGER,
+    plus_minus INTEGER,
+    minutes_played REAL,
+    
+    q1_points INTEGER,
+    q2_points INTEGER,
+    q3_points INTEGER,
+    q4_points INTEGER,
+    
+    bench_points INTEGER,
+    biggest_lead INTEGER,
+    lead_changes INTEGER,
+    
+    points_fast_break INTEGER,
+    points_turnovers INTEGER,
+    points_paint INTEGER,
+    
+    season_wins INTEGER,
+    season_losses INTEGER,
+    
+    game_type TEXT,
+    game_date TEXT
+);
+
+add schema
